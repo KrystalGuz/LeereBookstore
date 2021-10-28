@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<link href="styles.css" rel="stylesheet" type="text/css" />
+	<title>Leere Bookstore</title>
+	<link rel="icon" type="image/png" href="images/Logo1.png">
+
+</head>
+
+<body>
+<div class="header">
+	<div class="main-container">
+		<div class="first-container share">
+			<h1><span id="one">L</span><span>e</span><span>e</span><span>r</span><span>e</span></h1>
+		</div>
+		<div class="second-container share">
+			<h1><span>B</span><span>o</span><span>o</span><span>k</span><span>S</span><span>t</span><span>o</span><span>r</span><span>e</span></h1>
+		</div>
+	</div>
+</div>
+<div class="page_wrapper">
+	<!--Login section-->
+	<div class="table_cell half">
+		<div class="content">
+			<!--LOGIN-->
+		</div>
+	</div>
+</div>
+<div class="footer">
+
+	<div class="grid">
+		<div class="cube">
+			<div class="item">
+				<ul class="tabs">
+					<li>
+						<input type="radio" name="tabs" id="tab1" checked="checked"/>
+						<label class="nav" for="tab1">Login</label>
+						<div class="tab-content" id="loginTabContent">
+							<form id="loginForm" action="login.php" method="POST">
+								<label class="frm">Usuario</label>
+								<input type="text" required="required" placeholder="Usuario" name="Usuario"/>
+								<label class="frm" for="password">Password</label>
+								<input type="password" required="required" placeholder="&#128272; Contrase�a" name="Password"/><br>
+								<button id="loginBtn" type="submit">Login</button><span></span>
+							</form>
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="tabs" id="tab2"/>
+						<label class="nav" for="tab2">Registro</label>
+						<div class="tab-content" id="signupTabContent">
+							<form action="Registro.php" method="POST">
+								<label class="frm" for="email">Nombre</label>
+								<input type="text" name="Usuario" required="required"/>
+								<label class="frm" for="email">Correo</label>
+								<input type="email" name="Correo" required="required"/>
+								<label class="frm" for="password">Password</label>
+								<input type="password" name="Password" required="required" placeholder="&#128272; Contrase�a"/>
+								<button id="loginBtn" type="submit">Register</button>
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="done">
+				<canvas id="canvas"></canvas>
+				<div id="fill"></div>
+				<div class="success"><span>Login Successful</span><i class="fa fa-check"></i></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+</body>
+</html>
